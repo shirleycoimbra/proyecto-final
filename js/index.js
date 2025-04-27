@@ -14,6 +14,22 @@ document.addEventListener('DOMContentLoaded', function() {
         cerrar.style.display = 'none';
         abrir.style.display = 'block';
     });
+    const video = document.querySelector('video');
+    
+    // Intentar reproducir (útil para móviles)
+    function attemptPlay() {
+        video.play().catch(error => {
+            // Si falla, mostrar un botón para reproducir manualmente
+            console.log("Reproducción automática bloqueada:", error);
+        });
+    }
+    
+    // Para algunos navegadores que necesitan interacción primero
+    document.body.addEventListener('click', function() {
+        attemptPlay();
+    }, { once: true });
+    
+    attemptPlay();
 });
 
     // Lightbox Gallery
