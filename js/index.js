@@ -39,8 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
-
     // Navegación entre imágenes
     lightboxPrev.addEventListener('click', () => {
         currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;

@@ -648,7 +648,7 @@ video {
     }
 }
 
-@media (max-width: 375px) { 
+@media (max-width: 395px) { 
     .form-container {
         padding: 0.25rem;
     }
