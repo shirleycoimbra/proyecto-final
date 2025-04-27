@@ -754,7 +754,7 @@ video {
         padding: 1.5rem;
     }
     
-    .price-1 img, .price-2 img {
+    .price-1 picture, .price-2 picture {
         max-width: 100%;
         margin: 0;
     }
